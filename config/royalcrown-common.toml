@@ -1,0 +1,40 @@
+
+[crown]
+	#Guardas NÃO revidam se você acertar um deles usando a coroa.
+	disableGuardRetaliation = true
+	#Guardas ajudam quando o rei ataca QUALQUER mob (modo 'lobo').
+	enableWolfMode = true
+	#Guardas defendem o rei contra mobs neutros (ex.: golem de ferro).
+	enableDefendNeutrals = true
+	#Raio (em blocos) para convocar guardas ao redor do rei.
+	#Range: 4.0 ~ 64.0
+	guardHelpRadius = 16.0
+	#Multiplicador do cooldown do ataque forçado (baseado no Attack Speed da arma).
+	#Ex.: 3.0 deixa uma espada (~13 ticks) ≈ 39 ticks (~2s).
+	#Range: 0.5 ~ 10.0
+	forcedCooldownMultiplier = 3.0
+	#Multiplicador do dano aplicado no ataque forçado (sobre o dano do item).
+	#Range: 0.1 ~ 5.0
+	forcedDamageMultiplier = 1.0
+
+	[crown.trial]
+		#Cidadãos mínimos na colônia para conquistar a coroa.
+		#Range: 1 ~ 500
+		requiredCitizens = 15
+		#Quantas defesas completas são necessárias.
+		#Range: 1 ~ 100
+		defensesRequired = 5
+		#Kills de mobs HOSTIS perto da colônia que contam como 1 defesa.
+		#Range: 1 ~ 100
+		waveKills = 5
+		#Tempo (ticks) para emendar kills num mesmo 'ataque' (padrão ~2 min = 2400).
+		#Range: 100 ~ 20000
+		waveTimeoutTicks = 2400
+		#Raio (blocos) para considerar que o combate foi 'perto da colônia'.
+		#Range: 8.0 ~ 128.0
+		nearRadius = 48.0
+		#Se true, apenas UMA coroa pode ser reclamada no mundo inteiro.
+		uniquePerWorld = true
+		#Permite reaver a coroa se perdida (se UNIQUE_PER_WORLD==true, só o mesmo jogador).
+		allowReclaim = false
+
